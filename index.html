@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Healy & Son trip to Trump International Golf Links, 15–17 April 2027 — itinerary, courses, hotels, costs and who’s coming.">
+<meta name="description" content="Healy & Son trip to Trump International Golf Links, 15–17 April 2027 — itinerary, courses, hotels, costs, rooming list and who’s coming.">
 <meta property="og:title" content="The Greatest 36 Trip · April 2027">
-<meta property="og:description" content="Two nights, two rounds on the Old and New Courses at Trump International Golf Links. 9 of 12 spots taken.">
+<meta property="og:description" content="Two nights, two rounds on the Old and New Courses at Trump International Golf Links.">
 <title>The Greatest 36 Trip</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Albert+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
@@ -222,6 +222,16 @@ tfoot td{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:
 .fourball li .role{font-family:"Albert Sans",sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--marram)}
 .squad-note{margin-top:22px;color:var(--ink-3);font-size:.9rem}
 
+
+/* rooming */
+.rooms{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,3vw,32px);margin-top:clamp(28px,4vw,44px)}
+@media (max-width:640px){.rooms{grid-template-columns:1fr}}
+.room-group{border-top:3px solid var(--marram);padding-top:16px}
+.room-group ul{list-style:none;margin:14px 0 0;padding:0}
+.room-group li{display:flex;align-items:baseline;gap:10px;padding:11px 0;border-bottom:1px solid var(--line-soft);font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:1.05rem;letter-spacing:-.01em;flex-wrap:wrap}
+.room-group li .amp{color:var(--marram);font-weight:400}
+.room-group .rate{margin-top:12px;font-size:.85rem;color:var(--ink-3)}
+
 /* footer */
 footer{border-top:1px solid var(--line-soft);padding-block:40px 56px;color:var(--ink-3);font-size:.86rem}
 footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
@@ -260,7 +270,7 @@ footer .brandmark b{color:var(--ink-2);display:block;font-weight:600}
     <div class="hero-facts">
       <div><small>Depart</small><b class="num">Thu 15 Apr · 14:55</b></div>
       <div><small>Return</small><b class="num">Sat 17 Apr · 19:20</b></div>
-      <div><small>Spots</small><b class="num">9 of 12 taken</b></div>
+      <div><small>Players</small><b class="num">12 · trip full</b></div>
       <div><small>Deposit</small><b class="num">£100 by 26 Sept</b></div>
     </div>
   </div>
@@ -458,11 +468,11 @@ footer .brandmark b{color:var(--ink-2);display:block;font-weight:600}
   <div class="wrap">
     <div class="sec-head">
       <div><p class="eyebrow">Who’s coming</p><h2>Who’s coming</h2></div>
-      <p class="lede">Twelve spots on the trip and nine already taken, so there’s room for three more. If you want one, book the flights above and get in touch.</p>
+      <p class="lede">All twelve spots are taken — three tee times back to back on both mornings. Rooms are set out below.</p>
     </div>
     <div class="squad one">
       <div class="fourball">
-        <p class="eyebrow">9 of 12 spots taken</p>
+        <p class="eyebrow">Confirmed · 12 players</p>
         <ol>
           <li>James Healy<span></span></li>
           <li>Seamus Healy<span></span></li>
@@ -473,13 +483,36 @@ footer .brandmark b{color:var(--ink-2);display:block;font-weight:600}
           <li>Billy Hickford<span></span></li>
           <li>Sam Edwards<span></span></li>
           <li>Connor McCulloch<span></span></li>
-          <li class="open">Open spot<span class="role">Available</span></li>
-          <li class="open">Open spot<span class="role">Available</span></li>
-          <li class="open">Open spot<span class="role">Available</span></li>
+          <li>Anthony Wilson<span></span></li>
+          <li>Michael Boakye<span></span></li>
+          <li>Henry Martin<span></span></li>
         </ol>
       </div>
     </div>
-    <p class="squad-note">Say which room option you want when you send your deposit so the pairings can be sorted.</p>
+
+    <div class="rooms">
+      <div class="room-group">
+        <p class="eyebrow">Twin rooms · 4</p>
+        <ul>
+          <li><span>James Healy</span><span class="amp">&amp;</span><span>Connor McCulloch</span></li>
+          <li><span>Danny McMullan</span><span class="amp">&amp;</span><span>Kane Hoare</span></li>
+          <li><span>Thomas Grant</span><span class="amp">&amp;</span><span>Joseph Read</span></li>
+          <li><span>Billy Hickford</span><span class="amp">&amp;</span><span>Sam Edwards</span></li>
+        </ul>
+        <p class="rate num">£430 per person</p>
+      </div>
+      <div class="room-group">
+        <p class="eyebrow">Single rooms · 4</p>
+        <ul>
+          <li><span>Seamus Healy</span></li>
+          <li><span>Anthony Wilson</span></li>
+          <li><span>Michael Boakye</span></li>
+          <li><span>Henry Martin</span></li>
+        </ul>
+        <p class="rate num">£570 per person</p>
+      </div>
+    </div>
+    <p class="squad-note">Same rooming at both hotels. Eight rooms in total each night.</p>
   </div>
 </section>
 </main>
